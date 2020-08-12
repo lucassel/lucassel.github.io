@@ -1,0 +1,184 @@
+
+body {
+    background: #fafafa;
+    color: #333333;
+    margin-top: 50px;
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #444444;
+}
+/*
+.button_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*/
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    padding-bottom:.5em;
+    margin: 0 auto;
+}
+
+#linklist {
+      list-style-type: none;
+}
+
+.skillfield{ padding-bottom: 2em;}
+
+
+.bg-steel {
+    background-color: #5f788a;
+}
+
+.content-section {
+    background: #ffffff;
+    padding: 10px 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.title-section {
+    margin-bottom: 3rem;
+}
+
+.name {
+    font-size: 3.7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.curriculum-vitae {
+    font-size: 3.7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.role {
+    font-size: 2rem;
+    font-weight: 100;
+
+}
+
+.company {
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.75rem;
+    color: #444444;
+}
+
+.dates {
+    font-weight: 100;
+}
+
+.article-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+}
+
+.article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.article-content {
+    display: block;
+}
+
+.job {margin-top:2em;}
+.badge {
+    font-size: 1.2em;
+    line-height: 1;
+    margin: .2em;
+    padding: .5em;
+    white-space:pre-wrap;
+}
+
+#mugshot {padding:3em;}
+
+
+.details {
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+
+}
+
+.print-only{visibility: hidden;display: none}
+
+
+@media print {
+    article {
+        page-break-inside: avoid;
+    }
+    .page-break {page-break-after:always;}
+
+    #bio {
+        page-break-inside: avoid;
+        page-break-after: always
+    }
+
+    .badge {
+        color: #444444;
+    }
+
+    .skillfield {
+        page-break-inside: avoid;
+
+    }
+
+
+    .no-print{display: none;}
+    .print-only{visibility: visible;display: block;}
+}
+
+
+@media(max-width:767px) {
+    .name {
+        font-size: 2em;
+    }
+    .curriculum-vitae {
+      font-size:2em;
+    }
+    .title-section {
+      margin-bottom:1.75em;
+    }
+    .role {font-size:1.33em;}
+    .company 
+    { font-size:1.5em; }
+}
