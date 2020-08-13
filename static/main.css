@@ -27,6 +27,8 @@ h6 {
 
 */
 
+.row {margin-bottom: 2em}
+
 .col-centered{
     float: none;
     margin: 0 auto;
@@ -157,11 +159,12 @@ h6 {
         color: #444444;
     }
 
-    .skillfield {
+
+
+    .no-break {
         page-break-inside: avoid;
 
     }
-
 
     .no-print{display: none;}
     .print-only{visibility: visible;display: block;}
