@@ -225,6 +225,20 @@ h6 {
   vertical-align: middle;
 }
 
+.btn-toggle {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn-toggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
 #mugshot {
   width: var(--mugshot-size);
   height: var(--mugshot-size);
