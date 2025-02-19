@@ -8,6 +8,8 @@
   --font-size-large: 3.7rem;
   --font-size-medium: 2rem;
   --font-size-small: 1.2rem;
+  --item-border: 1px solid #ddd;
+  --item-border-radius: 0.5rem;
 }
 
 body {
@@ -62,6 +64,10 @@ h6 {
 
 .skillfield {
   padding-bottom: 2em;
+}
+
+.skill-title {
+  font-weight: 600;
 }
 
 .bg-steel {
@@ -144,15 +150,39 @@ h6 {
 }
 
 .badge {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1;
   margin: 0.2em;
   padding: 0.5em;
   white-space: pre-wrap;
+  font-weight: 300;
 }
 
 #mugshot {
   padding: 2em;
+}
+
+#educations {
+  display: flex;
+  gap: 1rem;
+}
+
+#certs {
+  display: flex;
+  gap: 1rem;
+}
+
+#courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.item {
+  background: #fff;
+  border: var(--item-border);
+  border-radius: var(--item-border-radius);
+  padding: 1rem;
 }
 
 .details {
