@@ -102,19 +102,30 @@ h6 {
   margin-bottom: 0;
 }
 
+.experience {
+  padding: 1rem;
+  border-radius: var(--item-border-radius);
+  border: var(--item-border);
+}
 .role {
-  font-size: var(--font-size-medium);
-  font-weight: 100;
+  font-size: 2.5rem;
+  font-weight: 80;
+}
+
+.job {
+  margin-top: 1rem;
+  padding: 0 1rem;
 }
 
 .company {
   font-weight: 700;
-  font-size: 2.75rem;
+  font-size: 2rem;
   color: var(--secondary-color);
   margin-top: 0;
 }
 
 .dates {
+  font-size: 1.2rem;
   font-weight: 100;
 }
 
@@ -139,14 +150,6 @@ h6 {
   width: 25px;
   height: 25px;
   vertical-align: middle;
-}
-
-.article-content {
-  display: block;
-}
-
-.job {
-  margin-top: 2em;
 }
 
 .badge {
@@ -174,7 +177,7 @@ h6 {
 
 #courses {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
 
