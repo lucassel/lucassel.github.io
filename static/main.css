@@ -10,7 +10,7 @@
   --font-size-small: 1.2rem;
   --item-border: 1px solid #ddd;
   --item-border-radius: 0.66rem;
-  --mugshot-size: 15rem;
+  --mugshot-size: 20rem;
 }
 
 body {
@@ -34,7 +34,8 @@ h6 {
 
 .title {
   font-weight: 600;
-  padding-bottom: 0.25rem;
+  margin: 0;
+  padding: 0;
 }
 
 .bg-steel {
@@ -57,8 +58,7 @@ h6 {
 }
 
 .name {
-  font-size: 2.5rem;
-
+  font-size: 3rem;
   text-align: center;
   font-weight: 800;
 }
@@ -67,22 +67,36 @@ h6 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 2rem;
-  text-align: center;
+  gap: 5vw;
+  text-align: left;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#mugshot-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+  aspect-ratio: 1/1;
+  max-width: 20rem;
 }
 
 #mugshot {
-  width: var(--mugshot-size);
-  height: var(--mugshot-size);
-  border-radius: var(--mugshot-size);
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  align-self: center;
+  border-radius: 50%; /* Keeps it circular */
 }
 
-.personal-info {
+#personal-info {
+  flex: 2;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   gap: 1rem;
+  text-align: left;
 }
 
 .contact-info {
@@ -92,8 +106,8 @@ h6 {
 
 .social-links {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.5rem 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 3rem;
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
@@ -101,39 +115,45 @@ h6 {
 .contact-info div,
 .social-links div {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
+  align-items: flex-start;
   line-height: 1.4;
+  text-align: left;
   justify-content: space-between;
 }
 
 .contact-info i,
 .social-links i {
-  font-size: 1.2rem; /* Adjust icon size */
-  min-width: 4rem;
-  text-align: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
 }
 
 .contact-info p,
 .contact-info a,
 .social-links a {
   margin: 0;
-  font-size: 1rem; /* Ensures text consistency */
+  font-size: 1rem;
   line-height: 1.4;
   text-align: right;
 }
 
+.contact-info p {
+  justify-self: flex-end;
+  text-align: right;
+}
+
+.contact-info a,
 .social-links a {
   text-decoration: none;
   color: inherit;
   font-weight: 500;
 }
-.social-links a:hover {
+.social-links a:hover,
+.contact-info a:hover {
   color: var(--accent-color);
 }
 
 #experience,
-#education {
+#educations {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -234,14 +254,10 @@ h6 {
   background: rgba(185, 205, 222, 0.1);
 }
 
-#educations {
+#certs {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-#certs {
-  flex-direction: row;
 }
 
 #courses {
@@ -254,7 +270,7 @@ h6 {
   background: #fff;
   border: var(--item-border);
   border-radius: var(--item-border-radius);
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .details {
@@ -267,33 +283,7 @@ h6 {
   display: none;
 }
 
-@media print {
-  article {
-    page-break-inside: avoid;
-  }
-  .page-break {
-    page-break-after: always;
-  }
-  #bio {
-    page-break-inside: avoid;
-    page-break-after: always;
-  }
-  .badge {
-    color: var(--secondary-color);
-  }
-  .no-break {
-    page-break-inside: avoid;
-  }
-  .no-print {
-    display: none;
-  }
-  .print-only {
-    visibility: visible;
-    display: block;
-  }
-}
-
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   #curriculum-vitae {
     max-width: 80%;
     padding-top: 1rem;
@@ -307,9 +297,20 @@ h6 {
   .name {
     font-size: xx-large;
   }
+
   #personal {
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
   }
+
+  #personal-info {
+    flex: none;
+    width: 100%;
+    padding: 1rem;
+  }
+
   .title-section {
     margin-bottom: 1.75rem;
   }
@@ -322,10 +323,10 @@ h6 {
     gap: 0.5rem;
   }
   .dates {
-    font-size: x-small;
+    font-size: small;
   }
   .duration {
-    font-size: xx-small;
+    font-size: x-small;
   }
   .role {
     font-size: medium;
@@ -355,5 +356,88 @@ h6 {
   #educations,
   #experience {
     gap: 0.33rem;
+  }
+}
+
+@media print {
+  #curriculum-vitae {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: xx-large;
+  }
+
+  p {
+    font-size: 0.75rem;
+    color: #333;
+  }
+
+  #personal {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  #personal-info {
+    gap: 0rem;
+  }
+
+  #mugshot-container {
+    width: 10rem;
+  }
+
+  .skill-area {
+    gap: 0.3rem;
+    padding: 0;
+    margin: 0;
+  }
+  .skills {
+    gap: 0.33rem;
+  }
+  .skill {
+    border: 1px solid #b9cfde;
+    color: #b9cfde;
+    font-size: small;
+    padding: 0.15rem 0.5rem;
+  }
+
+  .role {
+    font-size: large;
+  }
+
+  .item {
+    padding: 0.3rem;
+  }
+  #experience,
+  #educations {
+    gap: 0.5rem;
+  }
+
+  .company {
+    font-size: x-large;
+  }
+
+  article {
+    page-break-inside: avoid;
+  }
+  .page-break {
+    page-break-after: always;
+  }
+  #bio {
+    page-break-inside: avoid;
+    page-break-after: always;
+  }
+  .badge {
+    color: var(--secondary-color);
+  }
+  .no-break {
+    page-break-inside: avoid;
+  }
+  .no-print {
+    display: none;
+  }
+  .print-only {
+    visibility: visible;
+    display: block;
   }
 }

@@ -40,15 +40,16 @@
     <div id="cv-container">
       <div id="curriculum-vitae">
          <div id="personal">
-  <img
-    id="mugshot"
-    class="img-fluid rounded-circle"
-    src="static/lucas.jpg"
-    alt="Profile Picture"
-    style="align-self: center"
-  />
+  <div id="mugshot-container">
+    <img
+      id="mugshot"
+      src="static/lucas.jpg"
+      alt="Profile Picture"
+      style="align-self: center"
+    />
+  </div>
 
-  <div class="personal-info">
+  <div id="personal-info">
     <h1 class="name">
       LUCAS SELFSLAGH
     </h1>
@@ -837,7 +838,7 @@
   <div class="skill-container">
     
     <div class="skill-area">
-      <h3 class="skill-title">Areas</h3>
+      <h5 class="skill-title">Areas</h5>
       <div class="skills">
         
         <div class="skill">Virtual Reality</div>
@@ -864,7 +865,7 @@
     </div>
     
     <div class="skill-area">
-      <h3 class="skill-title">General</h3>
+      <h5 class="skill-title">General</h5>
       <div class="skills">
         
         <div class="skill">digital native</div>
@@ -885,7 +886,7 @@
     </div>
     
     <div class="skill-area">
-      <h3 class="skill-title">Programming languages</h3>
+      <h5 class="skill-title">Programming languages</h5>
       <div class="skills">
         
         <div class="skill">Python</div>
@@ -910,7 +911,7 @@
     </div>
     
     <div class="skill-area">
-      <h3 class="skill-title">Software</h3>
+      <h5 class="skill-title">Software</h5>
       <div class="skills">
         
         <div class="skill">Autodesk 3DS Max</div>
@@ -953,7 +954,7 @@
     </div>
     
     <div class="skill-area">
-      <h3 class="skill-title">Frameworks/engines</h3>
+      <h5 class="skill-title">Frameworks/engines</h5>
       <div class="skills">
         
         <div class="skill">Unity 3D</div>
@@ -976,7 +977,7 @@
     </div>
     
     <div class="skill-area">
-      <h3 class="skill-title">Devices</h3>
+      <h5 class="skill-title">Devices</h5>
       <div class="skills">
         
         <div class="skill">Hololens</div>
@@ -1001,7 +1002,7 @@
     </div>
     
     <div class="skill-area">
-      <h3 class="skill-title">Operating systems</h3>
+      <h5 class="skill-title">Operating systems</h5>
       <div class="skills">
         
         <div class="skill">Linux</div>
@@ -1014,7 +1015,7 @@
     </div>
     
     <div class="skill-area">
-      <h3 class="skill-title">3D Production</h3>
+      <h5 class="skill-title">3D Production</h5>
       <div class="skills">
         
         <div class="skill">modelling</div>
@@ -1184,22 +1185,37 @@
   
   <div id="certs">
     
-    <article class="item">
-      <h3>Elements of AI</h3>
-      <h6>University of Helsinki</h6>
-      <p>2020</p>
+    <article
+      class="item"
+      style="display: flex; flex-direction: row; justify-content: space-between"
+    >
+      <h4>Elements of AI</h4>
+      <div style="display: flex; flex-direction: column; text-align: right">
+        <h5>University of Helsinki</h5>
+        <p style="margin: 0">2020</p>
+      </div>
     </article>
     
-    <article class="item">
-      <h3>Certificate of Digital Proficiency</h3>
-      <h6>Microsoft</h6>
-      <p>2015</p>
+    <article
+      class="item"
+      style="display: flex; flex-direction: row; justify-content: space-between"
+    >
+      <h4>Certificate of Digital Proficiency</h4>
+      <div style="display: flex; flex-direction: column; text-align: right">
+        <h5>Microsoft</h5>
+        <p style="margin: 0">2015</p>
+      </div>
     </article>
     
-    <article class="item">
-      <h3>NBN-normen voor tekst- en briefschikking</h3>
-      <h6>VDAB</h6>
-      <p>2015</p>
+    <article
+      class="item"
+      style="display: flex; flex-direction: row; justify-content: space-between"
+    >
+      <h4>NBN-normen voor tekst- en briefschikking</h4>
+      <div style="display: flex; flex-direction: column; text-align: right">
+        <h5>VDAB</h5>
+        <p style="margin: 0">2015</p>
+      </div>
     </article>
     
   </div>
@@ -1222,7 +1238,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Unity: Timeline and Cinemachine</h4>
+        <h6>Unity: Timeline and Cinemachine</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1236,7 +1252,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Unity: Interactivity for AEC</h4>
+        <h6>Unity: Interactivity for AEC</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1250,7 +1266,7 @@
           justify-content: space-between;
         "
       >
-        <h4>After Effects 2020 New Features</h4>
+        <h6>After Effects 2020 New Features</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1264,7 +1280,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Cert Prep: Unity Audio and Effects</h4>
+        <h6>Cert Prep: Unity Audio and Effects</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1278,7 +1294,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Unity 3D 2019 Essential Training</h4>
+        <h6>Unity 3D 2019 Essential Training</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1292,7 +1308,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Cert Prep: Unity Scripting and Publishing</h4>
+        <h6>Cert Prep: Unity Scripting and Publishing</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1306,7 +1322,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Initiatie in boekhouden</h4>
+        <h6>Initiatie in boekhouden</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           VDAB (2020)
         </p>
@@ -1320,7 +1336,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Cert Prep: Unity Fundamentals</h4>
+        <h6>Cert Prep: Unity Fundamentals</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1334,7 +1350,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Informatica: Scrum</h4>
+        <h6>Informatica: Scrum</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           VDAB (2020)
         </p>
@@ -1348,7 +1364,7 @@
           justify-content: space-between;
         "
       >
-        <h4>C#: Delegates, Events and Lambdas</h4>
+        <h6>C#: Delegates, Events and Lambdas</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1362,7 +1378,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Unity 2017: Architectural Visualization</h4>
+        <h6>Unity 2017: Architectural Visualization</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1376,7 +1392,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Cert Prep: Unity Animation and Cinematics</h4>
+        <h6>Cert Prep: Unity Animation and Cinematics</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1390,7 +1406,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Unity: AR Visualization 03 Complex Interactivity</h4>
+        <h6>Unity: AR Visualization 03 Complex Interactivity</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1404,7 +1420,7 @@
           justify-content: space-between;
         "
       >
-        <h4>C# File System Tips and Tricks</h4>
+        <h6>C# File System Tips and Tricks</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1418,7 +1434,7 @@
           justify-content: space-between;
         "
       >
-        <h4>C# Object-Oriented Programming Tips and Tricks</h4>
+        <h6>C# Object-Oriented Programming Tips and Tricks</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1432,7 +1448,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Revit to Unity for Architecture, Visualization, and VR Intermediate</h4>
+        <h6>Revit to Unity for Architecture, Visualization, and VR Intermediate</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1446,7 +1462,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Cert Prep: Unity Materials and Lighting</h4>
+        <h6>Cert Prep: Unity Materials and Lighting</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1460,7 +1476,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Unity: Scripting with C#</h4>
+        <h6>Unity: Scripting with C#</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1474,7 +1490,7 @@
           justify-content: space-between;
         "
       >
-        <h4>C# for Unity Game Development</h4>
+        <h6>C# for Unity Game Development</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1488,7 +1504,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Unity: Integrating GPS and Points of Interest</h4>
+        <h6>Unity: Integrating GPS and Points of Interest</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1502,7 +1518,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Cert Prep: Unity UI and 2D Games</h4>
+        <h6>Cert Prep: Unity UI and 2D Games</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1516,7 +1532,7 @@
           justify-content: space-between;
         "
       >
-        <h4>C# Refactoring Tips and Tricks</h4>
+        <h6>C# Refactoring Tips and Tricks</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           Linkedin (2020)
         </p>
@@ -1530,7 +1546,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Inleiding tot PHP</h4>
+        <h6>Inleiding tot PHP</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           VDAB (2016)
         </p>
@@ -1544,7 +1560,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Websites ontwerpen met HTML 5</h4>
+        <h6>Websites ontwerpen met HTML 5</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           VDAB (2015)
         </p>
@@ -1558,7 +1574,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Adobe Photoshop: oefeningen</h4>
+        <h6>Adobe Photoshop: oefeningen</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           VDAB (2015)
         </p>
@@ -1572,7 +1588,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Webdesign: basisprincipes Drupal	</h4>
+        <h6>Webdesign: basisprincipes Drupal	</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           VDAB (2015)
         </p>
@@ -1586,7 +1602,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Sociale media op de werkvloer</h4>
+        <h6>Sociale media op de werkvloer</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           VDAB (2015)
         </p>
@@ -1600,7 +1616,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Webdesign - stylesheets in CSS3	</h4>
+        <h6>Webdesign - stylesheets in CSS3	</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           VDAB (2015)
         </p>
@@ -1614,7 +1630,7 @@
           justify-content: space-between;
         "
       >
-        <h4>Adobe InDesign: basis</h4>
+        <h6>Adobe InDesign: basis</h6>
         <p style="margin-bottom: 0; padding-bottom: 0">
           VDAB (2015)
         </p>
