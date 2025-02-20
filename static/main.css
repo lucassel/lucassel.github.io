@@ -10,7 +10,7 @@
   --font-size-small: 1.2rem;
   --item-border: 1px solid #ddd;
   --item-border-radius: 0.66rem;
-  --mugshot-size: 20rem;
+  --mugshot-size: 15rem;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h1,
@@ -43,6 +43,19 @@ h6 {
   background-color: var(--accent-color);
 }
 
+#cv-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#curriculum-vitae {
+  max-width: 70%;
+  flex-grow: 1;
+  padding-top: 2rem;
+  gap: 0;
+}
+
 .content-section {
   background: #fff;
   padding: 10px;
@@ -56,20 +69,10 @@ h6 {
 }
 
 .name {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1;
   text-align: center;
   font-weight: 800;
-}
-
-#cv-container {
-  display: flex;
-  justify-content: center;
-}
-
-#curriculum-vitae {
-  max-width: 70%;
-  flex-grow: 1;
 }
 
 #personal {
@@ -244,6 +247,7 @@ h6 {
 #certs {
   display: flex;
   gap: 1rem;
+  flex-direction: row;
 }
 
 #courses {
@@ -297,15 +301,41 @@ h6 {
 
 @media (max-width: 767px) {
   #curriculum-vitae {
-    max-width: 90%;
+    max-width: 80%;
+  }
+  #certs {
+    flex-direction: column;
+  }
+  .title {
+    font-size: x-large;
   }
   .name {
-    font-size: 2rem;
+    font-size: xx-large;
   }
   #personal {
     flex-direction: column;
   }
   .title-section {
     margin-bottom: 1.75rem;
+  }
+
+  .jobheader {
+    gap: 0.5rem;
+  }
+  .dates {
+    font-size: x-small;
+  }
+  .duration {
+    font-size: xx-small;
+  }
+  .role {
+    font-size: medium;
+  }
+  .company {
+    font-size: large;
+  }
+  .jobfooter {
+    flex-direction: column; /* Stack job footer elements vertically */
+    gap: 0.5rem; /* Reduce gap between items */
   }
 }
