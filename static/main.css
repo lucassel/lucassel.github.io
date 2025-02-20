@@ -201,7 +201,7 @@ h6 {
   font-weight: 400;
   white-space: nowrap;
   background: var(--accent-color);
-  border-radius: 5px; /* Slightly rounded corners for a modern look */
+  border-radius: 0.5rem; /* Slightly rounded corners for a modern look */
   color: #fff;
 }
 
@@ -302,6 +302,7 @@ h6 {
 @media (max-width: 767px) {
   #curriculum-vitae {
     max-width: 80%;
+    padding-top: 1rem;
   }
   #certs {
     flex-direction: column;
@@ -317,6 +318,10 @@ h6 {
   }
   .title-section {
     margin-bottom: 1.75rem;
+  }
+
+  .experience {
+    padding: 1rem;
   }
 
   .jobheader {
@@ -337,5 +342,14 @@ h6 {
   .jobfooter {
     flex-direction: column; /* Stack job footer elements vertically */
     gap: 0.5rem; /* Reduce gap between items */
+  }
+  .item {
+    padding: 0.5rem;
+  }
+
+  .skill {
+    font-size: small;
+    line-height: 1.1;
+    padding: 0.33rem 0.66rem;
   }
 }
