@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/15ika4zy8_z34.js"],""]
+3:I[97367,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen flex items-center justify-center px-4","children":["$","div",null,{"className":"text-center","children":[["$","h1",null,{"className":"text-4xl sm:text-5xl font-bold tracking-tight","children":["Lucas"," ","Selfslagh"]}],["$","p",null,{"className":"mt-3 text-zinc-500","children":"Curriculum Vitae"}],["$","div",null,{"className":"mt-8 flex gap-4 justify-center","children":[["$","$L2",null,{"href":"/en","className":"px-6 py-2.5 bg-zinc-900 text-white rounded-lg text-sm font-medium hover:bg-zinc-700 transition-colors","children":"English"}],["$","$L2",null,{"href":"/nl","className":"px-6 py-2.5 border border-zinc-300 rounded-lg text-sm font-medium hover:bg-zinc-100 transition-colors","children":"Nederlands"}]]}]]}]}],[["$","script","script-0",{"src":"/_next/static/chunks/15ika4zy8_z34.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"lnaFnShv2VuA6BYwLYdvM"}
+5:null
